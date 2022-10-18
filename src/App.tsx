@@ -43,23 +43,16 @@ import React, { useReducer, useRef } from "react";
 //   console.log(inputRef?.current?.focus(), "ssss");
 // };
 
-{
-  /* <input ref={inputRef} type="text" placeholder="Ex..." />
-<button onClick={handleClick}>focus</button> */
-}
+// {
+//   /* <input ref={inputRef} type="text" placeholder="Ex..." />
+// <button onClick={handleClick}>focus</button> */
+// }
 
 function App() {
   // mainly used for dom manipulations
-  const inputRef = useRef<any>(null);
-  const handleClick = () => {
-    // means we always access the current value
-    console.log(inputRef?.current?.focus(), "ssss");
-  };
+
   return (
-    <div className="App" style={{ textAlign: "center", padding: "3rem" }}>
-      <input ref={inputRef} type="text" placeholder="Ex..." />
-      <button onClick={handleClick}>focus</button>
-    </div>
+    <div className="App" style={{ textAlign: "center", padding: "3rem" }}></div>
   );
 }
 
